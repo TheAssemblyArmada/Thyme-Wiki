@@ -4,5 +4,5 @@ Hello and welcome to the Thyme wiki. In time we hope to grow this wiki to captur
 
 ## Pages
 ### Technical Information
-[[Compressed String File Format]]  
+[[Compiled String File Format]]  
 [[BIG File Format]]
