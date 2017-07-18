@@ -32,7 +32,7 @@ struct CSFHeader
 };
 ```
 
-The "id" is a FourCC code that translates to the ASCII string " FSC", essentially "CSF " in little endian format.
+The "id" is a [FourCC](https://en.wikipedia.org/wiki/FourCC) code that translates to the ASCII string " FSC", essentially "CSF " in little endian format.
 
 "version" is always 3 for SAGE engine games, though the engine does check for a value of 1 or less, in which case the langid is ignored and set to 0.
 
@@ -54,7 +54,7 @@ struct Label
 };
 ```
 
-Each label consists of an "id" equivalent to the string " LBL", followed by the number of strings the label can refer to, then the length of the label ASCII string followed by the string itself. The "label" string is not null terminated and must match the given "length". The engine code refers only to the label when requesting a string for display so that localisation can be done separately.
+Each label entry begins with a FourCC "id" equivalent to the string " LBL", again likely a little endian "LBL ". This is followed by the number of strings the label can refer to, then the length of the label ASCII string followed by the string itself. The "label" string is not null terminated and must match the given "length". The engine code refers only to the label when requesting a string for display so that localisation can be done separately.
 
 ### Strings 
 
@@ -69,7 +69,7 @@ struct String
 };
 ```
 
-"id" for the string is a FourCC value and must be either " RTS" or "WRTS", with "WRTS" indicating an additional ASCII string appended on. The values for the string are little endian and are encoded using a binary NOT on the value. The following is an example of how it might be decoded in C:
+The FourCC "id" for the string must be either " RTS" or "WRTS" (little endian "STR " and "STRW"), with "WRTS" indicating an additional ASCII string appended on. The values for the string are little endian and are encoded using a binary NOT on the value. The following is an example of how it might be decoded in C:
 
 ```C++
 for (int i = 0; i < length; ++i) {
