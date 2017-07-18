@@ -58,4 +58,23 @@ Each label consists of an "id" equivalent to the string " LBL", followed by the 
 
 ### Strings 
 
-TODO
+```C++
+struct String
+{
+    uint32_t id;
+    int32_t length;
+    uint16_t string[length]
+    int32_t ex_length;         // Only present when id matches 'WRTS'
+    char ex_string[ex_length]; // Only present when id matches 'WRTS'
+};
+```
+
+"id" for the string is a FourCC value and must be either " RTS" or "WRTS", with "WRTS" indicating an additional ASCII string appended on. The values for the string are little endian and are encoded using a binary NOT on the value. The following is an example of how it might be decoded in C:
+
+```C++
+for (int i = 0; i < length; ++i) {
+    string[i] = ~string[i];
+}
+```
+
+Debug information left in certain executables suggests that the "ex_string" was related to audio files in some way, possibly as a file name for an audio file containing a reading of the string text. However it appears such a feature is not used in any SAGE game.
