@@ -1,14 +1,21 @@
-This is the Thyme style guide. If you want to submit code, your pull requests will only be accepted if you follow this style. We provide a clang format file that can be used to apply many of the aspects of this style guide automatically, but things like variable naming you will have to follow yourself. We are also aware that not all the existing code may adhere fully to the guide, we'll fix this as bugs are fixed or features are added that touch these files. Don't submit pull requests that only fix style.
+This is the Thyme style guide.  
+If you want to submit code, your pull requests will only be accepted if you follow this style.  
+
+We provide a clang format file that can be used to apply many of the aspects of this style guide automatically, but things like variable naming you will have to follow yourself.  
+We are also aware that not all the existing code may adhere fully to the guide, we'll fix this as bugs are fixed or features are added that touch these files. Don't submit pull requests that only fix style.
 
 #### Why Do We Need a Style Guide?
 
-You may ask "Why do we need a style guide"? Afterall, so long as the code is valid C/C++ it will compile and work, lets go wild. Three reasons, maintainability, readability and consistency.  
-Parts of the style guide may seem overly verbose to seasoned programmers but we want the code to be accessible to those with less experience as well, so we insist that generally you write what you mean rather than the minimum the compiler will accept. You also might want ot do a drive by contribution that scratches and itch for you but them someone else needs to understand and maintain that code.  
+You may ask "Why do we need a style guide"? Afterall, so long as the code is valid C/C++ it will compile and work, let's go wild.  
+Three reasons, maintainability, readability and consistency.  
+
+Parts of the style guide may seem overly verbose to seasoned programmers but we want the code to be accessible to those with less experience as well, so we insist that generally you write what you mean rather than the minimum the compiler will accept.  
+You also might want to do a drive by contribution that scratches an itch for you but them someone else needs to understand and maintain that code.  
 For consistency, the actual style doesn't matter so much as the fact there is a style and every one follows it all of the time.
 
 #### Naming Cases
 
-These are the different casing styles that are used throughout the code. They will be refered to as these names in the rest of the guide.
+These are the different casing styles that are used throughout the code. They will be referred to as these names in the rest of the guide.
 
 * MACRO_CASE
 * Capital_Case
@@ -30,7 +37,7 @@ These are the different casing styles that are used throughout the code. They wi
 
 #### Functions
 
-* Functions use captital case for naming.
+* Functions use capital case for naming.
 * Return type is on the same line as the function name.
 * Functions taking no parameters should have empty parenthesis unless they are part of a file intended to follow C conventions and allow compilation with a C compiler where they have void.
 * Virtual member functions declared in child classes should have the override identifier to check at compile time that they have the correct signature when they override functions in the base class.
