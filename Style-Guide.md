@@ -81,11 +81,16 @@ void Many_Param_Function(
 * Static variables within a function use snake case prefixed by "_".
 * Typedefs should use concat case and are suffixed with "_t".
 * As with function naming, be conservative with the use of abbreviations.
+* Pointer and reference operators belong to the variable, not the type and certainly not somewhere in between.
 
 ```C
 int g_someGlobalVar;
 typedef void(*funcptr_t)();
 typedef int specialint_t;
+
+
+int &g_someReference = g_someGlobalVar;
+int *g_somePointer = &g_someGlobalVar;
 
 class SomeClass
 {
