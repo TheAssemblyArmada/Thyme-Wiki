@@ -37,6 +37,21 @@ These are the different casing styles that are used throughout the code. They wi
 * Use '//' for comments within classes and functions, use '///' outside functions and classes to document their purpose (useful for producing documentation with doxygen).
 * In general try and avoid comments after lines except for struct and class members.
 
+```C
+/// This is a description of the functions purpose
+void Useful_Function()
+{
+    // This explains or clarifies some aspect of the function
+    return;
+}
+
+/// This is a description of the classes purpose
+SomeClass
+{
+    int m_someMember; // This is a comment on the members purpose.
+}
+```
+
 #### Functions
 
 * Functions use capital case for naming.
@@ -81,6 +96,7 @@ void Many_Param_Function(
 * Static variables within a function use snake case prefixed by "_".
 * Typedefs should use concat case and are suffixed with "_t".
 * As with function naming, be conservative with the use of abbreviations.
+* Variable names should be at least partly self documenting, avoid brief names apart from things like 'i', 'j' and 'k' in nested for loops and 'it' for standard library container iterators.
 * Pointer and reference operators belong to the variable, not the type and certainly not somewhere in between.
 
 ```C
