@@ -87,7 +87,7 @@ void Many_Param_Function(
 
 ```
 
-#### Variables And Typedefs
+#### Variables and Typedefs
 
 * Local variables use snake case as do function parameters and plain old data (POD) struct members.
 * Class member variables use camel case prefixed by "m_".
@@ -193,6 +193,65 @@ LotOMembers::LotOMembers() :
 }
 ```
 
+#### Flow Control
+
+* Scope opening brace on the end of the line rather than a new line.
+* Spaces after the control keyword and before the opening brace.
+* Else follows immediately after the closing brace of the previous scope, again no new line.
+* Use single line if statements only for trivial returns, for other operations open a new scope.
+* Use single line switch cases only if all cases are trivial returns or breaks, otherwise use a new line and indent for all cases.
+* Cases are indented one level.
+* Comment where a case fall through is intentional.
+* Always include a default case in a switch.
+* Be explicit about what conditional you are checking, only use '!' when checking bools and bitwise flag checks, though flag checks can also be explicit if you wish.
+
+```C
+void Function_With_Conditionals(const char *char_ptr, bool is_boolean, int flags)
+{
+    // Optional form
+    //if (char_ptr == nullptr) return;
+    //if (*char_ptr == '\0') return;
+
+    if (char_ptr == nullptr || *char_ptr == '\0') {
+        return;
+    }
+
+    if (!is_boolean) {
+        // Do stuff
+    }
+
+    if (flags & FLAG_CONST_ONE) {
+        // Do stuff
+    } else if ((flag & FLAG_CONST_TWO) && !(flag & FLAG_CONST_THREE)) {
+        // Do alternate stuff
+    } else {
+        // Do this instead
+    }
+
+    switch (flags) {
+        case 1: // Fallthrough
+        case 2:
+            // Do stuff
+            break;
+        case 3:
+            // Do other stuff
+        default:
+            break;
+    }
+
+    for (int i = 0; i < 100; ++i) {
+        // Do stuff
+    }
+
+    while (*char_ptr != '\0') {
+        ++char_ptr;
+    }
+
+    do {
+        ++char_ptr;
+    } while (*char_ptr == '\0')
+}
+````
 #### WIP
 
 More to come.
