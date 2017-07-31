@@ -30,7 +30,7 @@ These are the different casing styles that are used throughout the code. They wi
 
 * C++11 is the language level the code must compile under, but only use features that aid readability or maintainability, not just to type less code and be more "productive".
 * Indents use spaces, 4 spaces to be exact.
-* Lines are up to 132 characters.
+* Lines are up to 132 characters, with 125 recommended as it is the longest length GitHub diff viewer supports.
 
 #### Comments
 
