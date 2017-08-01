@@ -30,7 +30,7 @@ These are the different casing styles that are used throughout the code. They wi
 
 * C++11 is the language level the code must compile under, but only use features that aid readability or maintainability, not just to type less code and be more "productive".
 * Indents use spaces, 4 spaces to be exact.
-* Lines are up to 132 characters, with 125 recommended as it is the longest length GitHub diff viewer supports.
+* Lines are up to 125 characters long as it is the longest length GitHub diff viewer supports.
 
 #### Comments
 
@@ -252,6 +252,15 @@ void Function_With_Conditionals(const char *char_ptr, bool is_boolean, int flags
     } while (*char_ptr == '\0')
 }
 ````
+
+#### Operators
+
+* Be careful when you use the increment and decrement operators, ```++i``` is not the same as ```i++``` when used as parameters or assignments. Specifically the first form (which applies to the decrement ```--i``` version too) will increment or decrement the value and then use the value as directed. The second form will use the value then increment or decrement it.
+* Use the pre decrement and increment operators (```++i``` and ```--i```) when the value isn't going to be used such as in for loops or as a stand alone statement.
+* All binary operators should have spaces on both sides of them.
+* Don't use bit shift operators to try and optimise multiplication or division of numbers that are a power of 2. Just write what you mean and rely on the compiler doing the micro optimisation. Use bit shift when you mean bit shift.
+* The remainder operator % does not work on negative numbers the way it does in some other languages. Best to cast to unsigned before using it if the value can possibly be negative or you know what it will do and expect it.
+
 #### WIP
 
 More to come.
