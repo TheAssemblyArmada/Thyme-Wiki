@@ -268,7 +268,7 @@ void Some_Math_Function()
 {
    int j = 0;
    bool some_very_long_named_bool;
-   int 
+
    for (int i = 0; i < 50; ++i) {
         some_very_long_named_bool = (i % 2) != 0;
         j += some_very_long_named_bool ? 50 : 25;
