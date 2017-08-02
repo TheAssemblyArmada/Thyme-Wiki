@@ -260,6 +260,30 @@ void Function_With_Conditionals(const char *char_ptr, bool is_boolean, int flags
 * All binary operators should have spaces on both sides of them.
 * Don't use bit shift operators to try and optimise multiplication or division of numbers that are a power of 2. Just write what you mean and rely on the compiler doing the micro optimisation. Use bit shift when you mean bit shift.
 * The remainder operator % does not work on negative numbers the way it does in some other languages. Best to cast to unsigned before using it if the value can possibly be negative or you know what it will do and expect it.
+* The ternary operator should have spaces around each part of the operator.
+* For long statements, put line breaks in after the operator.
+
+```C
+void Some_Math_Function()
+{
+   int j = 0;
+   bool some_very_long_named_bool;
+   int 
+   for (int i = 0; i < 50; ++i) {
+        some_very_long_named_bool = (i % 2) != 0;
+        j += some_very_long_named_bool ? 50 : 25;
+        j += i + i;
+
+        // Break styles if lines run long
+        j += some_very_long_named_bool ?
+            50 :
+            25;
+        j += i +
+            i;
+   }
+}
+
+```
 
 #### WIP
 
