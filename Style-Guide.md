@@ -34,18 +34,22 @@ These are the different casing styles that are used throughout the code. They wi
 
 #### Comments
 
-* Use '//' for comments within classes and functions, use '///' outside functions and classes to document their purpose (useful for producing documentation with doxygen).
+* Use '//' for comments within classes and functions, use '/** documentation */' bocks outside functions and classes to document their purpose along with doxygen tags as nessesary (useful for producing documentation with doxygen).
 * In general try and avoid comments after lines except for struct and class members.
 
 ```C
-/// This is a description of the functions purpose
+/**
+ * This is a description of the functions purpose
+ */
 void Useful_Function()
 {
     // This explains or clarifies some aspect of the function
     return;
 }
 
-/// This is a description of the classes purpose
+/**
+ * This is a description of the classes purpose
+ */
 SomeClass
 {
     int m_someMember; // This is a comment on the members purpose.
