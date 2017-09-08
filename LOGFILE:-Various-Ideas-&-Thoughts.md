@@ -8,8 +8,17 @@ This page is meant for more informal and initial mentioning of ideas and thought
 Items on this page are actively modified and deleted (strikethrough?).
 
 ## Various Ideas
+### Gameplay Logic
+* Ability to reverse the cargo loading procedure - Instead of the unit to be loaded moving to the transporter, the unit stands still and the transporter comes to it.
+* Show Cargo Pips When Transporter Full Exception - Otherwise hidden unless selected (A Gameplay setting under Options Menu?)
+
+### Specific Module Behavior
+* TODO: Aircraft Guard Behavior 
+
+### System Info & Diagnostics
 * Thyme should add a small non-annoying, barely noticable icon to some non-interesting part of the screen during gameplay to indicate that Thyme is active. Users watching various streams and recorded videos would know where to look for an be able to instantly know whether or not Thyme was used in the viewing video. This should help with chat spam and questions.
 
 ## Thoughts & Questions
 
 * Should infantry be very slowly healed when garrisoned in civilian buildings?
+* Should China speaker towers be allowed to block line of sight to base defences? - not sure if they do that.
