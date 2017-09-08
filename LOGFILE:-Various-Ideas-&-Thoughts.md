@@ -7,10 +7,14 @@ This page is meant for more informal and initial mentioning of ideas and thought
 Items on this page are actively modified and deleted (strikethrough?).
 
 # Various Ideas
+## Controllability
+* Ability to adjust location of the offmap cargo plane spawnpoint for caputrable tech buildings
 ## Gameplay Logic
 * Ability to reverse the cargo loading procedure - Instead of the unit to be loaded moving to the transporter, the unit stands still and the transporter comes to it.
 * Show Cargo Pips When Transporter Full Exception - Otherwise hidden unless selected (A Gameplay setting under Options Menu?)
-
+## Problematic Units
+# Tactical Nuke MiG 
+* 
 ## Specific Module Behavior
 * TODO: Aircraft Guard Behavior 
 
