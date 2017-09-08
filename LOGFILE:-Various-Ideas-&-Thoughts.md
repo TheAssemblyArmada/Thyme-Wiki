@@ -8,7 +8,7 @@ This page is meant for more informal and initial mentioning of ideas and thought
 Items on this page are actively modified and deleted (strikethrough?).
 
 ## Various Ideas
-* Thyme should add a small non-annoying, barely noticable icon to some non-interesting part of the screen during gameplay to indicate that Thyme is active. The users watching various streams and recorded videos would know where to look for an be able to instantly know whether or not Thyme was used in the viewing video.
+* Thyme should add a small non-annoying, barely noticable icon to some non-interesting part of the screen during gameplay to indicate that Thyme is active. Users watching various streams and recorded videos would know where to look for an be able to instantly know whether or not Thyme was used in the viewing video.
 
 ## Thoughts & Questions
 
