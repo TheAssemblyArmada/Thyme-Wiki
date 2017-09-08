@@ -22,4 +22,4 @@ Whether or not non-engine-modification-requiring Enhancements will be used in an
 
 ## Unsorted Enhancements List
 * Ability to reverse the cargo loading procedure - Instead of the unit to be loaded moving to the transporter, the unit stands still and the transporter comes to it.
-* Show Cargo Pips When Transporter Full (A Gameplay setting under Options Menu?)
+* Show Cargo Pips When Transporter Full Exception - Otherwise hidden unless selected (A Gameplay setting under Options Menu?)
