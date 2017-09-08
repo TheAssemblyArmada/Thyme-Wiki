@@ -4,10 +4,8 @@ Well, at a bare minimum you will need a description of what the bug is, somethin
 #### Detailed Description
 
 A detailed description includes a description of what isn't working and the circumstances in which it doesn't work.  
-For our examples you might have the following:
-
-"Sound isn't working for when I click on units, but the music is playing in game so I know its producing some sound."
-
+For our examples you might have the following:  
+"Sound isn't working for when I click on units, but the music is playing in game so I know its producing some sound."  
 "Graphics are messed up, where there are supposed to be roads there are just purple strips."
 
 Both of these give some indication of what specifically we are looking for and what should happen when the bug is fixed. However, what if the bug was something that only happened under circumstances?  
