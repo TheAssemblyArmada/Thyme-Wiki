@@ -22,6 +22,8 @@ Items on this page are actively modified and deleted (strikethrough?).
 * Thyme should add a small non-annoying, barely noticable icon to some non-interesting part of the screen during gameplay to indicate that Thyme is active. Users watching various streams and recorded videos would know where to look for an be able to instantly know whether or not Thyme was used in the viewing video. This should help with chat spam and questions.
 
 # Thoughts & Questions
-
+* When reverse cargo loading behavior is implemented, should all transport units be given 2 control buttons necessary for choosing mode? If yes, which setting would be the default?
 * Should infantry be very slowly healed when garrisoned in civilian buildings?
 * Should China speaker towers be allowed to block line of sight to base defences? - not sure if they do that.
+* Should deployable units when deployed undeploy and move out of the way when a unit paths through or should they ignore? Manual deployment?
+*
