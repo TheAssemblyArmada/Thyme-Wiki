@@ -11,7 +11,7 @@ What may become a "**Thyme's default**" Enhancement is probably the hardest part
 Any new Enhancements ideas should be added to the unsorted section at first.
 After it is determined that an item corresponds to criteria in other sections, it will be moved appropriately.
 
-Whether or not non-engine-modification-requiring Enhancements will be used in any part of Thyme, optionally or otherwise, will be determined in future.
+Whether or not non-engine-modification-requiring Enhancements will be used in any part of Thyme, optionally or otherwise, will be determined in future. These can considered "Enhancements to the official/original gameplay", as they are already possible with the original engine, but aren't implemented in gameplay logic. 
 
 
 ## Engine-Modification-Required Enhancements List 
@@ -21,4 +21,5 @@ Whether or not non-engine-modification-requiring Enhancements will be used in an
 * nothing yet
 
 ## Unsorted Enhancements List
-* Ability to reverse the cargo loading procedure (instead of the unit to be loaded moving to the transporter, the unit stands still and the transporter comes to it) 
+* Ability to reverse the cargo loading procedure - Instead of the unit to be loaded moving to the transporter, the unit stands still and the transporter comes to it.
+* Show Cargo Pips When Transporter Full (A Gameplay setting under Options Menu?)
