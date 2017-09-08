@@ -12,7 +12,7 @@ Whether or not non-engine-modification-requiring Enhancements will be used in an
 
 The biggest reason for keeping the non-engine-modification-requiring Enhancements is for reference and overview purposes, as well as to avoid duplicates.
 
-## Unsorted Enhancements List - _add yours here_
+## Unsorted Enhancements List - ### _add yours here_
 * Ability to reverse the cargo loading procedure - Instead of the unit to be loaded moving to the transporter, the unit stands still and the transporter comes to it.
 * Show Cargo Pips When Transporter Full Exception - Otherwise hidden unless selected (A Gameplay setting under Options Menu?)
 
