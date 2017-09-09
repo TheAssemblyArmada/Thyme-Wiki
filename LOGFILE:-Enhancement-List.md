@@ -1,5 +1,4 @@
-# Enhancements Todo List (WIP)
-## _This page is currently under active development_
+### This page is currently under active development - Contents may change completely
 
 This page is a more formal "enhancements ideas" list that are suspected to require intervention by Thyme (engine-modification) and should also have more substantial weight and reasoning behind it already.  
 If you aren't sure or you believe your idea doesn't heave enough weight, or if you have just made up the idea a few hours/days ago and aren't sure if it would require engine-modification, post it into the **Various Ideas & Thoughts** page instead.
