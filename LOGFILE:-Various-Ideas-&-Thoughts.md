@@ -30,6 +30,9 @@ Items on this page are actively modified and deleted (strikethrough?).
 * Flashing or static icon on aircraft without available hangar slot (the icon could be displayed static while aircraft is en-route by player command, has ammo, or is guarding, when it performs it's RTB command the icon will start flashing)
 * Show Cargo Pips When Transporter Full Exception - Otherwise hidden unless selected (A Gameplay setting under Options Menu?)
 
+## Battlefield Behavior
+* Ability to multi-select structures (for training, multi-activate things like "overload power", but probably not upgrades) 
+
 ## System Info & Diagnostics
 * Thyme should add a small non-annoying, barely noticable icon to some non-interesting part of the screen during gameplay to indicate that Thyme is active. Users watching various streams and recorded videos would know where to look for an be able to instantly know whether or not Thyme was used in the viewing video. This should help with chat spam and questions.
 
