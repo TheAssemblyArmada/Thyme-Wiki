@@ -2,7 +2,8 @@
 
 ***
 
-This page is meant for more informal and initial mentioning of ideas and thoughts that aren't serious enough or the person just didn't develop it on it's own to be able to fully explain and present a case for it. These mostly wouldn't be part of Thyme in any way but are interesting nontheless to have an overview of the stance/reasoning the community have in mind sorrounding Generals Zero Hour. Some of the things discussed here might turn out to be substantial enough and will be escalated to the Enhancements List.
+This page is meant for more informal and initial mentioning of ideas and thoughts that aren't serious enough or the person just didn't develop it on it's own to be able to fully explain and present a case for it.  
+These mostly wouldn't be part of Thyme in any way but are interesting nonetheless to have an overview of the stance/reasoning the community have in mind surrounding Generals Zero Hour. Some of the things discussed here might turn out to be substantial enough and will be escalated to the Enhancements List.
 
 ***
 **GLOSSARY:**
