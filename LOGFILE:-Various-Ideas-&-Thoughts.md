@@ -8,7 +8,7 @@ Items on this page are actively modified and deleted (strikethrough?).
 
 # Various Ideas
 ## Controllability
-* Ability to adjust location of the offmap cargo plane spawnpoint for caputrable tech buildings
+* Ability to adjust location of the offmap cargo plane spawnpoint for caputrable tech buildings (Ai should also be able to do this)
 
 ## Gameplay Logic
 * Ability to reverse the cargo loading procedure - Instead of the unit to be loaded moving to the transporter, the unit stands still and the transporter comes to it.
