@@ -2,7 +2,7 @@
 
 ***
 
-This page contains a list of clear-cut bugs or behavior that may most certainly be considered a bug by the community, if you have a complicated case please add and explain it in the **Various Ideas & Thoughts** page first.
+This page contains a list of clear-cut bugs or behavior that may most certainly be considered a bug by the community, if you have a complicated case please add and explain it in the _**Various Ideas & Thoughts**_ page first.
 
 ***
 
