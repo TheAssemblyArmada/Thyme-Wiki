@@ -2,14 +2,18 @@
 
 ***
 
-This page is meant for more informal and initial mentioning of ideas and thoughts that aren't serious enough or the person just didn't develop it on it's own to be able to fully explain and present a case for it.  
-These mostly wouldn't be part of Thyme in any way but are interesting nonetheless to have an overview of the stance/reasoning the community have in mind surrounding Generals Zero Hour. Some of the things discussed here might turn out to be substantial enough and will be escalated to the Enhancements List.
+This page is meant for more informal and initial mentioning of ideas and thoughts that aren't serious enough or the person just didn't develop it on it's own to be able to fully explain and present a case for it.
+These mostly wouldn't be part of Thyme in any way but are interesting nontheless to have an overview of the stance/reasoning the community have in mind sorrounding Generals Zero Hour. Some of the things discussed here might turn out to be substantial enough and will be escalated to the Enhancements List.
 
 ***
+
 **GLOSSARY:**
 
 * IUAI: Internal Unit Artificial Intelligence (such as `Retaliation`)
 * Prop: Proposition
+* GACP: Guard Area Center Point
+* GAEP: Guard Area Enroute Point
+* GAIP: Guard Area Intersection Point
 
 ***
 ***
@@ -30,16 +34,17 @@ These mostly wouldn't be part of Thyme in any way but are interesting nonetheles
 * REFs -> GuardArea behavior, many keep target dead flying unit air bounce, range + flying height, attack/move
 
 ## **Problematic Gameplay Behavior**
-### Aircraft `GuardArea` Behavior - (ref -> Tactical Nuke MiG = TACMG)
+### Aircraft `GuardArea` Behavior - (ref -> Tactical Nuke MiG = TCMG)
 * Case1: InsideGuardArea = Aircraft idling inside guard area waiting for enemies to enter zone
 * Case2: EnrouteToGuardArea = Aircraft enroute to guard area with enemy presence
 * Problem1: InsideGuardArea: Enemy aircraft that rush into the guard zone are able (major cause of friendly fire for TACMG)
 * Problem2: EnrouteToGuardArea: Aircraft are not attacking the nearest enemy unit to the point from which they enter the guard area, even if it's attacking them.
 * Prop1: increase the global nominal aircraft-flying-height defaults
 * Prop2: increase the `GuardArea` radius size defaults
-* Prop3: The aircraft IUAI should retaliate against the attacking unit even if the aircraft is guarding and the attacking unit is outside the guard area.
-* Prop2: IUAI should determine 
-* Prop3: IUAI should further
+* Prop3: Case2: The aircraft IUAI should retaliate against the attacking unit even if the aircraft is guarding and the attacking unit is outside the guard area.
+* Prop2: Case2: IUAI should determine the nearest enemy target taking the direction from which the aircraft is approaching the guard area zone into account,  
+* Prop3: Case2: IUAI should further filter the nearest target by taking the threat level into account, so that the nearest
+
 
 ### Aircraft Unit-Not-Completely-Dead-Targeting Issue (ref -> Tactial Nuke MiG)
 * Problem: WIP todo
@@ -51,10 +56,12 @@ These mostly wouldn't be part of Thyme in any way but are interesting nonetheles
 
 ***
 
+### Aircraft `AirOnlyGuardArea` Ground Threat Avoidance Idea
+
 ## **Specific _BehaviorModule_ Behavior Ideas**
 ### `JetSlowDeathBehavior` 
 * _Improvements here should greately benefit the modding community_
-* WIP
+* WIP (todo add mult profiles, loco, spec opt for prop planes crash, terrain drag dist)
 
 ### `HelicopterSlowDeathBehavior`
 * _Improvements here should greately benefit the modding community_
@@ -85,3 +92,4 @@ These mostly wouldn't be part of Thyme in any way but are interesting nonetheles
 * Should deployable units when deployed undeploy and move out of the way when a unit paths through or should they ignore? Manual deployment?
 * Is it really necessary for aircraft to start losing health when they are requesting a landing hangar slot, if they can guard indefinitely while armed why can't they idle without weapons - at least the rate could be lowered some? Would any change here really severely affect the balance and the originality?
 * Should aircraft making a landing request be redirected to the nearest HQ position rather than the position of the airfield that they took off from? That position might still be under enemy presence. This redirection shoud happen as part of the RTB command that the unit-AI performs, which means as soon as it runs out of ammo, this should also nicely fit the timing when the flashing "no-hangar" icon is activated.
+
