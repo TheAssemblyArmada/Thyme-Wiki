@@ -51,9 +51,12 @@ This page is meant for more informal and initial mentioning of ideas and thought
 ***
 
 ## **Specific _BehaviorModule_ Behavior Ideas**
-### `JetSlowDeathBehavior` - _Improvements here should greately benefit the modding community_
+### `JetSlowDeathBehavior` 
+* _Improvements here should greately benefit the modding community_
 * WIP
-### `HelicopterSlowDeathBehavior` - _Improvements here should greately benefit the modding community_
+
+### `HelicopterSlowDeathBehavior`
+* _Improvements here should greately benefit the modding community_
 * WIP
 
 ***
