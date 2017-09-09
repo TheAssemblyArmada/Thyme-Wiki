@@ -15,8 +15,15 @@ Items on this page are actively modified and deleted (strikethrough?).
 
 ## Problematic Units
 ### Tactical Nuke MiG 
-* 
-## Specific Module Behavior
+* guard behavior, friendly fire, civ buildings, ammo target dead unit, short range
+
+## Problematic Gameplay Behavior
+### WIP - Aircraft Guard Behavior, esp Tactical Nuke MiG 
+* Proposition1: increase default global aircraft flying height
+* Prop2:
+* Prop3:
+
+## Specific BehaviorModule Behavior
 * TODO: Aircraft Guard Behavior 
 
 ## Battlefield GUI
