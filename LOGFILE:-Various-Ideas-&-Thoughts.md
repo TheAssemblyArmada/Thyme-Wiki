@@ -51,12 +51,15 @@ This page is meant for more informal and initial mentioning of ideas and thought
 ***
 
 ## **Specific _BehaviorModule_ Behavior Ideas**
-* MODZ: Aircraft Guard Behavior 
+### `JetSlowDeathBehavior` - _Improvements here should greately benefit the modding community_
+* WIP
+### `HelicopterSlowDeathBehavior` - _Improvements here should greately benefit the modding community_
+* WIP
 
 ***
 
 ## Battlefield GUI
-* Flashing or static icon on aircraft without available hangar slot (the icon could be displayed static while aircraft is en-route by player command, has ammo, or is guarding, when it performs it's RTB command the icon will start flashing)
+* Flashing or static small icon on aircraft without available hangar slot (the icon could be displayed static while aircraft is en-route by player command, has ammo, or is guarding, when it performs it's RTB command the icon will start flashing)
 * Show Cargo Pips When Transporter Full Exception - Otherwise hidden unless selected (A Gameplay setting under Options Menu?)
 
 ***
