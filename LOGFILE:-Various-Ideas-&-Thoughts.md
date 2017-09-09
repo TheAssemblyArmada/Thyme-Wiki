@@ -15,13 +15,16 @@ Items on this page are actively modified and deleted (strikethrough?).
 
 ## Problematic Units
 ### Tactical Nuke MiG 
-* guard behavior, friendly fire, civ buildings, ammo target dead unit, short range
+* Behaviors and components that aircraft use are already problemating, combining that with the Tactial Nuke warhead upgrade, it makes the Nuke MiG stand out from all the rest as the most problematic aircraft unit.
+* Experiences frequent friendly fire.
+* REFs -> GuardArea behavior, many keep target dead flying unit air bounce, range + flying height
 
 ## Problematic Gameplay Behavior
-### WIP - Aircraft Guard Behavior, esp Tactical Nuke MiG 
+### WIP - Aircraft `GuardArea` Behavior (ref -> Tactical Nuke MiG)
 * Proposition1: increase default global aircraft flying height
 * Prop2:
 * Prop3:
+### WIP - Aircraft Unit Not Completely Dead Targeting Issue (ref -> Tactial Nuke MiG)
 
 ## Specific BehaviorModule Behavior
 * TODO: Aircraft Guard Behavior 
@@ -41,5 +44,5 @@ Items on this page are actively modified and deleted (strikethrough?).
 * Should infantry be very slowly healed when garrisoned in civilian buildings?
 * Should China speaker towers be allowed to block line of sight to base defences? - not sure if they do that.
 * Should deployable units when deployed undeploy and move out of the way when a unit paths through or should they ignore? Manual deployment?
-* Is it really necessary for aircraft to start losing health when they are idling for landing request, if they can guard while armed why should they - at least the rate could be lowered some?
+* Is it really necessary for aircraft to start losing health when they are requesting a landing hangar slot, if they can guard indefinitely while armed why can't they idle without weapons - at least the rate could be lowered some? Would any change here really severely affect the balance and the originality?
 * Should aircraft making a landing request be redirected to the nearest HQ position rather than the position of the airfield that they took off from? That position might still be under enemy presence. This redirection shoud happen as part of the RTB command that the unit-AI performs, which means as soon as it runs out of ammo, this should also nicely fit the timing when the flashing "no-hangar" icon is activated.
