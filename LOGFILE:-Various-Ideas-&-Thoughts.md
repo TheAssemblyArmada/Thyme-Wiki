@@ -1,4 +1,4 @@
-## WIP - This page is under active development 
+## WIP - This page is under active development - contents may change completely
 
 ***
 
@@ -9,14 +9,19 @@ Items on this page are actively modified and deleted (strikethrough?).
 # Various Ideas
 ## Controllability
 * Ability to adjust location of the offmap cargo plane spawnpoint for caputrable tech buildings
+
 ## Gameplay Logic
 * Ability to reverse the cargo loading procedure - Instead of the unit to be loaded moving to the transporter, the unit stands still and the transporter comes to it.
-* Show Cargo Pips When Transporter Full Exception - Otherwise hidden unless selected (A Gameplay setting under Options Menu?)
+
 ## Problematic Units
 ### Tactical Nuke MiG 
 * 
 ## Specific Module Behavior
 * TODO: Aircraft Guard Behavior 
+
+## Battlefield GUI
+* Flashing or static icon on aircraft without available hangar slot (the icon could be displayed static while aircraft is en-route by player command, has ammo, or is guarding, when it performs it's RTB command the icon will start flashing)
+* Show Cargo Pips When Transporter Full Exception - Otherwise hidden unless selected (A Gameplay setting under Options Menu?)
 
 ## System Info & Diagnostics
 * Thyme should add a small non-annoying, barely noticable icon to some non-interesting part of the screen during gameplay to indicate that Thyme is active. Users watching various streams and recorded videos would know where to look for an be able to instantly know whether or not Thyme was used in the viewing video. This should help with chat spam and questions.
@@ -26,4 +31,5 @@ Items on this page are actively modified and deleted (strikethrough?).
 * Should infantry be very slowly healed when garrisoned in civilian buildings?
 * Should China speaker towers be allowed to block line of sight to base defences? - not sure if they do that.
 * Should deployable units when deployed undeploy and move out of the way when a unit paths through or should they ignore? Manual deployment?
-*
+* Is it really necessary for aircraft to start losing health when they are idling for landing request, if they can guard while armed why should they - at least the rate could be lowered some?
+* Should aircraft making a landing request be redirected to the nearest HQ position rather than the position of the airfield that they took off from? That position might still be under enemy presence. This redirection shoud happen as part of the RTB command that the unit-AI performs, which means as soon as it runs out of ammo, this should also nicely fit the timing when the flashing "no-hangar" icon is activated.
