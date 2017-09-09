@@ -6,5 +6,7 @@ This page contains a list of clear-cut bugs or behavior that may most certainly 
 
 ***
 
-* china/nukegen: fix nuke cannons reload deploy/undeploy bug
+* Chinas: nuke cannons are able to move-out-of-the-way when deployed
+* Chinas: nuke cannons keep redeploying when reloading
 * EVAs: disable **_unit lost_** announcement for offmap cargo planes, it's not a buildable or controllable unit (also make sure it doesn't count as a score for units destroyed and units created)
+
