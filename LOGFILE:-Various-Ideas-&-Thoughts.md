@@ -1,9 +1,13 @@
-## WIP - This page is under active development - contents may change completely
+## WIP - This page's purpose is under active development - Content may change completely
 
 ***
 
-This page is meant for more informal and initial mentioning of ideas and thoughts that aren't serious enough or the person just didn't develop it on it's own to be able to fully explain and present a case for it.
-These mostly wouldn't be part of Thyme in any way but are interesting nontheless to have an overview of the stance/reasoning the community have in mind sorrounding Generals Zero Hour. Some of the things discussed here might turn out to be substantial enough and will be escalated to the Enhancements List.
+This page is meant for initial mentioning of ideas and thoughts that may mostly be fixes and enhancements implemented for the use by the modding community, as well as the proposed but yet unconfirmed optional **Thyme Patch** project which would try to implement some of the non-critical enhnacements and balance fixes put forward by the community. 
+
+Some of the items mentioned here might eventually turn out to become part of **Thyme's Core Defaults** if justified, however an official list of those would be provided in a separate changelog.
+
+While it is not certain that **Thyme Patch** proposition would ever be realized and while it is most definitely certain that most of the items presented on this page would not be part of **Thyme's Core Defaults**, this page's existance may still prove useful and interesting interesting nontheless to have an overview of the stance/reasoning the community have in mind sorrounding Generals Zero Hour and might be a basis or help other Thyme-unrelated patch projects.
+
 
 ***
 
