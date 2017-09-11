@@ -2,7 +2,7 @@
 
 ***
 
-This page contains a list of clear-cut bugs or behavior that may most certainly be considered a bug by the community, if you have a complicated case please add and explain it in the _**Various Ideas & Thoughts**_ page first.
+This page contains an unofficial list of what the community believes are clear-cut bugs or behavior that should be part of **Thyme's Core Defaults**, complicated cases when there is a lot of balanceing involved should go in the _**Various Ideas & Thoughts**_ page.
 
 ***
 
