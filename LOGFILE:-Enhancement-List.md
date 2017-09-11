@@ -1,4 +1,4 @@
-### WIP - This page is currently under active development - Contents may change completely
+### WIP - This page's purpose is currently under active development - Contents may change completely
 
 ***
 
