@@ -11,6 +11,9 @@ Instead of trying to figure out how the existing scaling system works in practic
 
 ### **ControlBarScheme.ini**
 
+- ScreenCreationRes: Doesn't really work as it sounds. It affects the positioning and scaling, making it very tied to the resolution of the texture even tho the whole point of dynamic scaling is to have one universal texture that can be adjusted internally. There seems to be an additional problem with width issue where texture gets cutt off at higher width, which requires the use of a wider canvas size of the texture (with alpha layer).
 
+
+### **ControlBar.wnd**
 
 
