@@ -25,6 +25,8 @@ This game uses a single commandbar texture and a single scheme (per faction) to 
 
 - Most of the time has to be spent on finetuning at the texture level, editing the .tga to get the scaling/positioning just right, a very inefficient way of doing things.
 
+- Unfortunately, to add to the problems, adjusting the extra alpha canvas width of the controllbar texture, it affects the scaling of the visible portion (stretches or shrinks), so this isn't even proper scaling system at all, very broken, it creates the file resolution as if it's a full texture and doesn't take alpha layer into account in this case.
+
 
 
 ### **ControlBar.wnd:**
