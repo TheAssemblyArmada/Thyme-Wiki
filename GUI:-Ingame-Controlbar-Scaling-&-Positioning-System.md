@@ -9,9 +9,7 @@ This game uses a single commandbar texture and a single scheme (per faction) to 
 
 
 
-### **ControlBarScheme.ini:**
-
-
+### **ControlBarScheme.ini and s?controlbar.tga texture:**
 
 - ScreenCreationRes: Doesn't really work as it sounds. It affects the positioning and scaling, making it very tied to the resolution of the texture even tho the whole point of dynamic scaling is to have one universal texture that can be adjusted internally. There seems to be an additional problem with width issue where texture gets cutt off at higher width, which requires the use of a wider canvas size of the texture (with alpha layer).
 
@@ -24,6 +22,8 @@ This game uses a single commandbar texture and a single scheme (per faction) to 
 - X Parameter: While it affects the texture, the primary thing is that it aligns the parent elements and that affects the aspect ratio of several other items inlcuding controlbar buttons and the generals points window, after several testing it appears that for widescreen the parameter should be set to 1066, this will get all the text aligned properly, adjusting this may appear that it would finetune the controlbar texture but then it ruins the parents, so this is again useless, this has to be set to 1066 and the controlbar texture scaling has to be finetuned by adjusting the texture it self.
 
 - Unfortunately, to add to the problems, adjusting the extra alpha canvas width of the controllbar texture, it affects the scaling of the visible portion (stretches or shrinks), so this isn't even proper scaling system at all, very broken, it creates the file resolution as if it's a full texture and doesn't take alpha layer into account in this case.
+
+- Adjusting the added empty alpha dimensions actually makes the game to scale the texture differently, it's not adjusting the position 1:1, the positionining is off because the controlbar gets streched or squeezed depending on the total dimensions of the texture, again, incredibly weird way of doing things.
 
 ### **ControlBar.wnd:**
 
