@@ -25,6 +25,8 @@ This game uses a single commandbar texture and a single scheme (per faction) to 
 
 - Adjusting the added empty alpha dimensions actually makes the game to scale the texture differently, it's not adjusting the position 1:1, the positionining is off because the controlbar gets streched or squeezed depending on the total dimensions of the texture, again, incredibly weird way of doing things.
 
+- The scaling effect described in the above point is also not proportional, higher the numbers, lesser would it be, for example when coming to lower numbers of vertical alpha space the vertical scale of the controlbar ingame would change significantly.
+
 ### **ControlBar.wnd:**
 
 
