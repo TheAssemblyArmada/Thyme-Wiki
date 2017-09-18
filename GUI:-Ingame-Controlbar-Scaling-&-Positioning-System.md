@@ -6,10 +6,10 @@ The results and findings on this page are based on the tests using only the 2560
 
 This game uses a single commandbar texture and a single scheme (per faction) to dynamically scale across several screen resolutions. It does not work very well for resolutions above the officially supported which do not include widescreen aspect ratios.
 
-Instead of trying to figure out how the existing scaling system works in practice, it is simply easier for Thyme to implement, simpler to maintain and more practical to create the necessary textures and configs for each of the established resolutions separately.
 
 
-### **ControlBarScheme.ini**
+
+### **ControlBarScheme.ini:**
 
 
 
@@ -27,11 +27,15 @@ Instead of trying to figure out how the existing scaling system works in practic
 
 
 
-### **ControlBar.wnd**
+### **ControlBar.wnd:**
 
 
 
-### Proposed Solution
+***
+
+### **Proposed Solution:**
+
+Instead of trying to figure out how the existing scaling system works in code, it is simply easier for Thyme to implement, and simpler to maintain as well as more practical to create the necessary textures and configs for each of the established resolutions separately.
 
 - Remove the scaling system, each resolution uses it's own scheme and window settings.
 
