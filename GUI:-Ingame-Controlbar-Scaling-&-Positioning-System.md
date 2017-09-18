@@ -15,19 +15,15 @@ This game uses a single commandbar texture and a single scheme (per faction) to 
 
 - ScreenCreationRes: Doesn't really work as it sounds. It affects the positioning and scaling, making it very tied to the resolution of the texture even tho the whole point of dynamic scaling is to have one universal texture that can be adjusted internally. There seems to be an additional problem with width issue where texture gets cutt off at higher width, which requires the use of a wider canvas size of the texture (with alpha layer).
 
+- ScreenCreationRes: It does not control the scale and positioning of most of the unit command buttons as well as their button images, additional it does not control the controlbar idle worker, pause menu and player list buttons or their elements.
+
+- ScreenCreationRes: Because it scales the controlbar's buttons, but not command buttons, it does have an effect on alignment of a lot of other things not just the texture, it is important to note that the controlbar's parent scaling is DIFFERENT from the controllbar texture, when the controlbar's parent is in the proper position, the texture will most probably not be scaled correctly, in order to fix this it is required to finetune the texture it self, unfortunately this leads to a wild goose chase of finding the correct balance/combination between the dimensions of the visible color area and the added canvas alpha area, basically a total disaster.
+
 - Y Parameter: Changing this one in any way from the default 600 will put the whole controlbar texture out of bottom screen alignment, therefore it is useless.
 
-- X Parameter: 
-
-- This affects the s?controllbar.tga texture that is on one of the layers, it also affects the scaling of generals powers and other textures for some weird reason, it does not control the scale and positioning of the button controls and their elements.
-
-- Because it scales the controlbar's buttons, but not command buttons, it does have an effect on alignment of a lot of other things not just the texture, it is important to note that the controlbar's parent scaling is DIFFERENT from the controllbar texture, when the controlbar's parent is in the proper position, the texture will most probably not be scaled correctly, in order to fix this it is required to finetune the texture it self, unfortunately.
-
-- Most of the time has to be spent on finetuning at the texture level, editing the .tga to get the scaling/positioning just right, a very inefficient way of doing things.
+- X Parameter: While it affects the texture, the primary thing is that it aligns the parent elements and that affects the aspect ratio of several other items inlcuding controlbar buttons and the generals points window, after several testing it appears that for widescreen the parameter should be set to 1066, this will get all the text aligned properly, adjusting this may appear that it would finetune the controlbar texture but then it ruins the parents, so this is again useless, this has to be set to 1066 and the controlbar texture scaling has to be finetuned by adjusting the texture it self.
 
 - Unfortunately, to add to the problems, adjusting the extra alpha canvas width of the controllbar texture, it affects the scaling of the visible portion (stretches or shrinks), so this isn't even proper scaling system at all, very broken, it creates the file resolution as if it's a full texture and doesn't take alpha layer into account in this case.
-
-
 
 ### **ControlBar.wnd:**
 
