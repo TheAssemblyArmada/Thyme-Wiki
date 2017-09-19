@@ -2,14 +2,14 @@
 
 Parts of this page may or may not apply to menus, but this page focuses on the controlbar buttons and textures that are presented to the player ingame and pertain mostly to the resolution scaling & positioning behavior.
 
-The results and findings on this page are based on the tests using only the 2560x1440 resolution.
+The results and findings on this page are based on the tests using only the 2560x1440 screen resolution and with China's sncommandbar.tga
 
 This game uses a single commandbar texture and a single scheme (per faction) to dynamically scale across several screen resolutions. It does not work very well for resolutions above the officially supported which do not include widescreen aspect ratios.
 
 ***
 ***
 
-### **General**:
+### **s?commandbar.tga texture:**:
 
 > - Unfortunately, to add to the problems, adjusting the extra alpha canvas width of the controllbar texture, it affects the scaling of the visible portion (stretches or shrinks), so this isn't even proper scaling system at all, very broken, it creates the file resolution as if it's a full texture and doesn't take alpha layer into account in this case.
 
@@ -22,6 +22,8 @@ This game uses a single commandbar texture and a single scheme (per faction) to 
 - It appears that using the example 2560x1440 sized texture with the controlbar's width at 2560 and height at max 440 pixels (the rest height is empty alpha fully transparent) and with the ScreenCreationRes: set at 1066 600 (equals to 16:9 aspect) and with HandCreatedMappedImages' Width/Height set at 2560x1440 and the params Left:0 Top:1000 Right:2560 Bottom:1440 it does appear that the controlbar fits exactly, however it is still being scaled, the "Top" parameter seems to control the vertical scaling, setting it at 0 makes the controlbar fit horizontally exactly, but it appears very thin as it is shrinken vertically, so adjusting these settings doesn't get us any closer to a 1:1 translation as the number 1000 doesn't really correspond to anything in the source texture, it's some internal scaling factor which also gets more intense with higher numbers (logarithmic or exponential)
 
 - There appears to be a horizontal cutoff point after which the controlbar visible texture will get cutt of, if the "Top" parameter is set too high, above ~1200 then the controlbar will appear very streched vertically but it will be clipped away at the top and it won't expand into the rest of the battlefield camera area. This is local to the scheme settings, adjusting those the whole thing may move forward, so this cutoff point isn't actually connected to the battlefield camera section in any way.
+
+- CRUCIAL FINDINGS: It appears that the whole use of extra alpha canvas area and the weird settings in HandCreatedMappeedImages.ini are set so that the texture scales with resolution change, but who knows, this is not 100% sure, importantly i have found that it is possible to set the controlbar texture pretty much 1:1 by simply appropirately setting the configs in this ini file which for some reason were not in the opfirestorms widescreen addon mod. However the engine doesn't support these settings per resolution, this is probably what would have to be done by **Thyme** or else this whole per-resolution thing might not be possible or simply underpar. All of the other configurations in other files are not necessary except beyond changing ScreenCreationRes in Scheme file from 800 600 to 1066 600, however that will break all the other resolutions with different aspect ratio, so ofcourse Schemes also have to be per-resolution. I have cropped my 2560+000 (zero extra alpha width) by 440+1000 (1000 alpha height) down to 440 height to match the china's maximum controlbar height which is on the left size, I have then set the texture size exactly, and set Left:0 Top:0 Right:2560 Bottom:440 and the result appeared correct, the controlbar appeared to be 1:1 as it should without any scaling issues or finetuning required.
 
 ### **ControlBarScheme.ini:**
 
