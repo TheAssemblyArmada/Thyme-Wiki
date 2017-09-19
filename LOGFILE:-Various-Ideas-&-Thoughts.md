@@ -88,6 +88,7 @@ While it is not certain that **Thyme Patch** proposition would ever be realized 
 ## Ingame GUI & ControlBar
 * Add "Exit To Desktop" button to pause menu.
 * Optimize & Update controlbar elements and textures for widescreen HD resolutions.
+* BUG: First powerplant adds a lot of powerbar length, almost half, subsequent powerplants add 5%
 
 ***
 ***
