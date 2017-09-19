@@ -46,8 +46,8 @@ While it is not certain that **Thyme Patch** proposition would ever be realized 
 * Prop1: increase the global nominal aircraft-flying-height defaults
 * Prop2: increase the `GuardArea` radius size defaults
 * Prop3: Case2: The aircraft IUAI should retaliate against the attacking unit even if the aircraft is guarding and the attacking unit is outside the guard area.
-* Prop2: Case2: IUAI should determine the nearest enemy target taking the direction from which the aircraft is approaching the guard area zone into account,  
-* Prop3: Case2: IUAI should further filter the nearest target by taking the threat level into account, so that the nearest
+* Prop2: Case2: IUAI should determine the nearest enemy target taking the direction from which the aircraft is approaching the guard area zone into account, ..WIP
+* Prop3: Case2: IUAI should further filter the nearest target by taking the threat level into account, so that the nearest .. WIP
 
 
 ### Aircraft Unit-Not-Completely-Dead-Targeting Issue (ref -> Tactial Nuke MiG)
@@ -79,11 +79,15 @@ While it is not certain that **Thyme Patch** proposition would ever be realized 
 
 ***
 
-## Battlefield Behavior
+## Battlefield Control & Behavior
 * Ability to multi-select structures (for training, multi-activate things like "overload power", but probably not upgrades) 
 
 ## System Info & Diagnostics
 * Thyme should add a small non-annoying, barely noticable icon to some non-interesting part of the screen during gameplay to indicate that Thyme is active. Users watching various streams and recorded videos would know where to look for an be able to instantly know whether or not Thyme was used in the viewing video. This should help with chat spam and questions.
+
+## Ingame GUI & ControlBar
+* Add "Exit To Desktop" button to pause menu.
+* Optimize & Update controlbar elements and textures for widescreen HD resolutions.
 
 ***
 ***
