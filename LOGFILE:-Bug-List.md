@@ -11,4 +11,4 @@ This is not an official _changelog_ or _planned-changes_ list. Fixes that are pa
 * Chinas: nuke cannons are able to move-out-of-the-way when deployed
 * Chinas: nuke cannons keep redeploying when reloading
 * EVAs: disable **_unit lost_** announcement for offmap cargo planes, it's not a buildable or controllable unit (also make sure it doesn't count as a score for units destroyed and units created)
-
+* USA Missle Infantry trying to run somewhere inside Artillery base defence
