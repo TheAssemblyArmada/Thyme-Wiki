@@ -12,4 +12,5 @@ This is not an official _changelog_ or _planned-changes_ list. Fixes that are pa
 * Chinas: nuke cannons keep redeploying when reloading
 * EVAs: disable **_unit lost_** announcement for offmap cargo planes, it's not a buildable or controllable unit (also make sure it doesn't count as a score for units destroyed and units created)
 * USA Missle Infantry trying to run somewhere inside Artillery base defence
-* Remove AI cheating: USA Vanilla AI uses FuelAirBomb with it's delivery cargo plane generated at player opponent map edge instead of the AI's edge (I got this in another mod, but I recall this thing happened a lot back in the days when I didn't play much mods)
+* AI Cheating: USA Vanilla AI uses FuelAirBomb with it's delivery cargo plane generated at player opponent map edge instead of the AI's edge (I got this in another mod, but I recall this thing happened a lot back in the days when I didn't play much mods)
+* AI Cheating: Black Lotus caputres buildings while walking
