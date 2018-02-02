@@ -1,0 +1,16 @@
+script:
+- |
+  git config user.name "Sync Agent"
+  git config user.email "syncagent@notarealaddress.com"
+  git remote remove origin
+  git remote add origin https://$GITHUB_WIKI_API_KEY@github.com/TheAssemblyArmada/Thyme-wiki.git > /dev/null 2>&1
+  git remote add upstream https://$GITHUB_WIKI_API_KEY@github.com/TheAssemblyArmada/Thyme.wiki.git > /dev/null 2>&1
+  git fetch origin
+  git fetch upstream
+  git merge upstream/master --no-edit
+  git push origin HEAD:master > /dev/null 2>&1
+  git push upstream HEAD:master > /dev/null 2>&1
+  
+env:
+  matrix:
+    secure: B7InNlWSf7R6HwVzDWQSzBN5XBzoswVJVIpsOOFt465dnXh6T0NxAObktgwNBCEmB+tIbUE3M1TDXZBL+ZHHsmNIAkPonfmQsCu5zcWK8c6Q9+BOUVokjt54rVRs/3gd3u7Cp8rk8tRJqWtQiXy9Htdwn2ACcG1YmEqbvRi2LUfXHRrTrKsMKQhx4aPhe144zi9EQ7jc95IjksnnWqZhHZvoZqWiuz0MJPlKXO8sLG4Be9CcUQ6GV0ozqOV6vtlK2VTUJKrw0tUTI9B/VDXQbgDupvC2HLbllYTaO51aIjjQ93YkFfc6b+D5kOtQdXObwkHWSWQnVMzYJySQNTmtpNtkFOJgmoIn36qzeQyZrtWpWGqvlje3Kw4g94R8P5QOpnmzOIAY+Rn3u2sNKZECQ/lluRMrRL7WXnq2JpqbfH4p9ewDbEoB/q2zUg8LeO0q591wW50VFgxBHPO4V1OiYOd4jt6qg73OP+zpx2zf0WeN+urpjsMSLjF+TJDqishSP5aByZ/b0kdxBKYzUd8AWLPsE2timovCflByw/n2vgGFKCU2FjXcmxDVr/y+m3f0Se6mHM9omf9XBbRpnBiJp6jxSG4w5yjRAaEmqs00ObH5VX5w/syRI5n6OEd1tC4DNYiRbQOxbtDBspcKaYPXGgpJxHRAKPz1JO6lKg/GBTY=
