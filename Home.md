@@ -7,15 +7,20 @@ This will include technical information such as file formats and engine details 
 
 These are mostly placeholders as the wiki is very much a work in progress.
 
+### General Information
+[[Changes To Original]]  
+[[Compiling Thyme]]  
+
 ### Contributing
+
 #### Code
 [[Style Guide]]  
-[[Commit Messages]]
+[[Commit Messages]]  
 
 #### Bug Reporting
-[[What To Include]]
+[[What To Include]]  
 
 ### Technical Information
 #### File Formats
 [[Compiled String File Format]]  
-[[BIG File Format]]
+[[BIG File Format]]  
