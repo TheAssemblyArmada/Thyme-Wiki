@@ -27,30 +27,30 @@ For windows builds, the most straight forward compiler suite is the one provided
 
 [[https://user-images.githubusercontent.com/2813117/36546502-8043bd76-17e3-11e8-8ebd-748c2c5edb81.png|alt=Clone%20Settings]]
 
-4. Now just click the "Clone" button and wait for the download to complete.
+5. Now just click the "Clone" button and wait for the download to complete.
 
 ## Configuring with CMake
 
-5. Open CMake (cmake-gui).
-6. Either browse to the directory that you cloned the repository to (target directory) or just type it for the "Where is the source code" box. 
-7. For the "Where to build the binarys" box we recommend that you use a subdirectory under the folder that you cloned to called "build" as in the screen shot below.
+6. Open CMake (cmake-gui).
+7. Either browse to the directory that you cloned the repository to (target directory) or just type it for the "Where is the source code" box. 
+8. For the "Where to build the binarys" box we recommend that you use a subdirectory under the folder that you cloned to called "build" as in the screen shot below.
 
 [[https://user-images.githubusercontent.com/2813117/36568134-c4a695e6-1820-11e8-885c-2a1f51e06769.png|alt=CMake%20Paths]]
 
-8. Click the "Configure" button.
-9. Select the appropriate Visual Studio generator, either 2015 or 2017. This depends on which version of Visual Studio you previously installed. *Do not try to use the Win64 generators as this will produce a malfunctioning build.*
-10. Click on "Finish." *CMake will now do some testing to check you have working compilers installed and try and detect any required development libraries, such as the previously installed DirectX SDK.* 
+9. Click the "Configure" button.
+10. Select the appropriate Visual Studio generator, either 2015 or 2017. This depends on which version of Visual Studio you previously installed. *Do not try to use the Win64 generators as this will produce a malfunctioning build.*
+11. Click on "Finish." *CMake will now do some testing to check you have working compilers installed and try and detect any required development libraries, such as the previously installed DirectX SDK.* 
 
 [[https://user-images.githubusercontent.com/2813117/36568247-2d2e0284-1821-11e8-9343-c2c79f45db90.png|alt=CMake%20Generator]]
 
-11. *Once complete, the main window of CMake will fill with the various parameters that will be used as part of the build. Provided there were no errors, this configuration shouldn't need any tweaking* If you see any errors you're not able to solve, contact us through our [Discord channel](https://discord.gg/YhdMbvD).
-12. Now, go ahead and click "Generate". *This should generate a solution that you can load into Visual Studio in the build directory we specified initially in the CMake window.*
+12. *Once complete, the main window of CMake will fill with the various parameters that will be used as part of the build. Provided there were no errors, this configuration shouldn't need any tweaking* If you see any errors you're not able to solve, contact us through our [Discord channel](https://discord.gg/YhdMbvD).
+13. Now, go ahead and click "Generate". *This should generate a solution that you can load into Visual Studio in the build directory we specified initially in the CMake window.*
 
 ### Compiling the Code
 
-13. Open Visual Studio 2015 or 2017. 
-14. Use the normal file open menu to find the .sln solution file that CMake generated in the build directory and open it.
-15. Select the "Build" menu item and lick on "Build Solution". Now the project should compile. *This can take a few minutes. When its finished, under your build directory should be a directory named after the type of build (Debug, Release, RelWithDebInfo). This directory contains your compiled 'thyme.dll' and 'launchthyme.exe'.*
+14. Open Visual Studio 2015 or 2017. 
+15. Use the normal file open menu to find the .sln solution file that CMake generated in the build directory and open it.
+16. Select the "Build" menu item and lick on "Build Solution". Now the project should compile. *This can take a few minutes. When its finished, under your build directory should be a directory named after the type of build (Debug, Release, RelWithDebInfo). This directory contains your compiled 'thyme.dll' and 'launchthyme.exe'.*
 
 ### Troubleshooting
 
