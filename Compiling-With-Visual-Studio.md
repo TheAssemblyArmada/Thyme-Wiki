@@ -46,14 +46,14 @@ For windows builds, the most straight forward compiler suite is the one provided
 12. *Once complete, the main window of CMake will fill with the various parameters that will be used as part of the build. Provided there were no errors, this configuration shouldn't need any tweaking* If you see any errors you're not able to solve, contact us through our [Discord channel](https://discord.gg/YhdMbvD).
 13. Now, go ahead and click "Generate". *This should generate a solution that you can load into Visual Studio in the build directory we specified initially in the CMake window.*
 
-### Compiling the Code
+## Compiling the Code
 
 14. Open Visual Studio 2015 or 2017. 
 15. Use the normal file open menu to find the .sln solution file that CMake generated in the build directory and open it.
 16. Select the "Build" menu item and lick on "Build Solution". Now the project should compile. *This can take a few minutes. When its finished, under your build directory should be a directory named after the type of build (Debug, Release, RelWithDebInfo). This directory contains your compiled 'thyme.dll' and 'launchthyme.exe'.*
 
-### Troubleshooting
+## Troubleshooting
 
-#### "S1023" error at the end of the installation of the DirectX SDK.
+### "S1023" error at the end of the installation of the DirectX SDK.
 
 At the end of the installation of the DirectX SDK a "S1023" could pop up. This error can be ignored and everything will be fine. But if you want to fix it, [these instructions](https://support.microsoft.com/en-us/help/2728613/s1023-error-when-you-install-the-directx-sdk-june-2010) can be followed.
