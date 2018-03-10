@@ -1,11 +1,22 @@
-### Additional Prerequisites
+### Requirements
+To make builduing Thyme possible, you need to install the following programs:
 
-In addition to CMake and Git which are required for building on any platform, you also need a compiler suite that will convert the source code into a usable program. For windows builds, the most straight forward compiler suite is the one provided by Visual Studio, the free community edition of which can be downloaded [here](https://www.visualstudio.com/vs/community/). When installing make sure you include the C++ development tools when given the option of what components to install.
+- Windows 7 / 8 / 10
+- [CMake](https://cmake.org/download/)
+- Visual Studio 2015 or 2017: Enterprise, Professional or [Community (Free)](https://www.visualstudio.com/vs/community/) version
+- [DirectX SDK (juni 2010)](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
+
+#### Visual Studio additional notes
+
+For windows builds, the most straight forward compiler suite is the one provided by Visual Studio. When installing make sure you include the C++ development tools when given the option of what components to install.
+
+#### DirectX SDK "S1023" error
+
+At the end of the installation of the DirectX SDK a "S1023" could pop up. This error can be ignored and everything will be fine. But if you want to fix it, [these instructions](https://support.microsoft.com/en-us/help/2728613/s1023-error-when-you-install-the-directx-sdk-june-2010) can be followed.
 
 ### Downloading the Source
 
 Assuming you installed the mainline Windows Git client, open Git GUI and click "Clone Existing Respository"
-
 
 [[https://user-images.githubusercontent.com/2813117/36545868-d1fbae82-17e1-11e8-9cf8-b83aa7e9be92.png|alt=Clone%20Existing]]
 
@@ -25,7 +36,7 @@ Click the "Configure" button and select the appropriate Visual Studio generator,
 
 [[https://user-images.githubusercontent.com/2813117/36568247-2d2e0284-1821-11e8-9343-c2c79f45db90.png|alt=CMake%20Generator]]
 
-CMake will do some testing to check you have working compilers installed and try and detect any required development libraries such as the Direct3D SDK. Once complete, the main window of CMake will fill with the various parameters that will be used as part of the build. Provided there were no errors, this configuration shouldn't need any tweaking, so go ahead and click "Generate". This should generate a solution that you can load into Visual Studio in the build directory we specified initially in the CMake window.
+CMake will do some testing to check you have working compilers installed and try and detect any required development libraries, such as the DirectX SDK. Once complete, the main window of CMake will fill with the various parameters that will be used as part of the build. Provided there were no errors, this configuration shouldn't need any tweaking, so go ahead and click "Generate". This should generate a solution that you can load into Visual Studio in the build directory we specified initially in the CMake window.
 
 ### Compiling the Code
 
