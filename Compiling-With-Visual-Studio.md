@@ -1,19 +1,19 @@
 # Requirements
-To make builduing Thyme possible, you need to download and install the following programs:
+In order to build Thyme, you need to download and install the following programs:
 
 - Windows 7 / 8 / 10
 - [Git client](https://git-scm.com/downloads)
 - [CMake](https://cmake.org/download/)
-- Visual Studio 2015 or 2017: Enterprise, Professional or [Community (Free)](https://www.visualstudio.com/vs/community/) version
-- [DirectX SDK (juni 2010)](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
+- Visual Studio 2017 or above: Enterprise, Professional or [Community (Free)](https://www.visualstudio.com/vs/community/) version
+- [DirectX8 SDK (august 2007)](https://www.microsoft.com/en-gb/download/details.aspx?id=13287)
 
 ## Visual Studio additional notes
 
-For windows builds, the most straight forward compiler suite is the one provided by Visual Studio. When installing make sure you include the C++ development tools when given the option of what components to install. Also, make sure to update Visual Studio to the latest version to prevent potential problems.
+When installing make sure you include the C++ development tools when given the option of what components to install. Also, make sure to update Visual Studio to the latest version to prevent potential problems.
 
 # Building Thyme
 
-## Downloading the source using Cmake
+## Downloading the source using git
 
 *Note: this could also be done by using [GitHub Desktop](https://desktop.github.com/), but in this guide we will asume you used the Git client.*
 
@@ -48,7 +48,7 @@ For windows builds, the most straight forward compiler suite is the one provided
 
 ## Compiling the Code
 
-14. Open Visual Studio 2015 or 2017. 
+14. Open Visual Studio 2017. 
 15. Use the normal file open menu to find the .sln solution file that CMake generated in the build directory and open it.
 16. Select the "Build" menu item and lick on "Build Solution". Now the project should compile. *This can take a few minutes. When its finished, under your build directory should be a directory named after the type of build (Debug, Release, RelWithDebInfo). This directory contains your compiled 'thyme.dll' and 'launchthyme.exe'.*
 
