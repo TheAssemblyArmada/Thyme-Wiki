@@ -10,6 +10,7 @@ These are mostly placeholders as the wiki is very much a work in progress.
 ### General Information
 [[Changes To Original]]  
 [[Compiling Thyme]]  
+[[Create a Patched Executable]]
 
 ### Contributing
 
