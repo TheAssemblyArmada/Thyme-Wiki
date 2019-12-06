@@ -17,8 +17,8 @@ These are mostly placeholders as the wiki is very much a work in progress.
 #### Code
 [[Style Guide]]  
 [[Commit Messages]]  
-[[Replacing Original Functions]]
-[[Calling Original Functions]]
+[[Replacing Original Functions]]  
+[[Calling Original Functions]]  
 
 #### Bug Reporting
 [[What To Include]]
