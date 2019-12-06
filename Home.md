@@ -17,9 +17,10 @@ These are mostly placeholders as the wiki is very much a work in progress.
 #### Code
 [[Style Guide]]  
 [[Commit Messages]]  
+[[Replacing Original Functions]]
 
 #### Bug Reporting
-[[What To Include]]  
+[[What To Include]]
 
 ### Technical Information
 #### File Formats
