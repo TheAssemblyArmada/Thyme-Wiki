@@ -24,6 +24,8 @@ CMake is used to configure the build. From the command line you will need to cre
 
 * cd to the cloned source directory. ```cd thyme```
 
+* If you have freshly cloned the repository, run ```git submodule update --init --recursive``` to fetch the submodules the project uses.
+
 * Make a build directory. ```mkdir build```
 
 * cd to the new directory. ```cd build```
