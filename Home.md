@@ -27,3 +27,6 @@ These are mostly placeholders as the wiki is very much a work in progress.
 #### File Formats
 [[Compiled String File Format]]  
 [[BIG File Format]]  
+
+### Contact Us
+[Discord](https://discord.gg/UnWK2Tw)
