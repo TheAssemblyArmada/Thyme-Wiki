@@ -7,6 +7,7 @@ It is also recommended that you have git installed and use it to clone the repos
 
 ### Platform Specific
 [[Compiling With Visual Studio]]  
+[[Compiling With Clion]]
 Todo
 
 ### Generic Guide
